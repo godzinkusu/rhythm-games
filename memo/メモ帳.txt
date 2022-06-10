@@ -1,0 +1,32 @@
+-----コード説明------
+
+リズムゲーム開始前
+levelchoice.cs・・・・・どの難易度を選択しているかを操作、musiccallpattarn.csにデータを渡す
+musiccallpattarn.cs・・・選んだ楽曲と難易度でどのCSVを使うかを判別する
+BGMcollect.cs・・・・・・選んだ楽曲でどの音楽を流すか判別する
+
+
+リズムゲーム開始
+DetectKey.cs・・・・・・どのボタン(数字)がどのレーンに対応しているかを判別、次の2つのコードにデータを渡す
+NodeController.cs・・・・記入されたCSVをそれぞれいつ流れ、どのレーンに流れるかを判別する(CSVについてはcsv.pngに解説を載せています)
+Taptiming.cs・・・・・・当たり判定でタイミング判定を行っている
+
+----------------------
+
+ CSVReader.cs・・・・・CSVが読み込まれるかどうかの確認
+
+ NodeMove.cs・・・・ノードのスピードとどの位置で消滅するかを設定
+
+ Textcombo.cs・・・・コンボ数、結果の保管
+
+ backchoicearea.cs・・・・シーン移動
+
+ longNodeMove.cs・・・ロングノーツの動き
+
+ longNoteController.cs・・・・ロングノーツの判定とどこで全部消えるか判定する
+
+ longnotemiddlecontroller.cs・・・・・ロングノーツの真ん中のレーンの長さの調整
+
+ taptokeycodechange.cs・・・・・無視
+
+ 
